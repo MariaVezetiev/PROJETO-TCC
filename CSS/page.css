@@ -1,0 +1,190 @@
+        * {
+
+            font-family:  sans-serif;
+        }
+
+        body {
+
+            background-size: 100%;
+            background-position-y: -80px;
+            background-repeat: no-repeat;
+            background-image: url("../IMAGES/tela.jpg");
+            filter: brightness(50%);
+        }
+
+        #corpoMsg {
+
+            width: 35%;
+            height: 200px;
+            background-color: rgba(34, 34, 219, 0.664);
+            backdrop-filter: blur(4px);
+            margin-top: 12%;
+            margin-left: 31.5%;
+            position: absolute;   
+            border-radius: 10px;
+
+            outline: none !important;
+            border: 1.5px solid rgb(135, 167, 238);
+            box-shadow: 0 0 100px rgb(107, 107, 255);
+
+            text-align: center;
+            color: rgb(168, 174, 255);
+
+            transition: .3s;
+            
+            opacity: 0;
+        }
+
+        #botao {
+
+            width: 150px;
+            height: 40px;
+            
+            position: absolute;
+            margin-left: 15%;
+            text-align: center;
+
+            margin-top: 2%;
+            margin-left: 33%;
+            
+            border-radius: 5px;
+            cursor: pointer;
+
+            border: 2px solid rgb(115, 146, 212);
+            background-color: rgb(68, 116, 218);
+
+            transition: .3s;
+        }
+
+        #botao:hover {
+
+            outline: none !important;
+            border: 2px solid rgb(144, 176, 247);;
+            box-shadow: 0 0 8px rgb(133, 133, 255);
+        }
+
+        #ok {
+
+            margin-top: 2px;
+            color: rgb(190, 194, 250);
+
+            transition: .3s;
+        }
+        
+        #corpoMsg1 {
+
+            width: 35%;
+            height: 200px;
+            background-color: rgba(224, 75, 55, 0.664);
+            backdrop-filter: blur(4px);
+            margin-top: 12%;
+            margin-left: 31.5%;
+            position: absolute;   
+            border-radius: 10px;
+
+            outline: none !important;
+            border: 1.5px solid rgb(238, 164, 135);
+            box-shadow: 0 0 100px rgb(255, 149, 107);
+
+            text-align: center;
+            color: rgb(204, 183, 159);
+
+            transition: .3s;
+            
+            opacity: 0;
+        }
+
+        #botao1 {
+
+            width: 150px;
+            height: 40px;
+            
+            position: absolute;
+            margin-left: 15%;
+            text-align: center;
+
+            margin-top: 5%;
+            margin-left: 33%;
+            
+            border-radius: 5px;
+            cursor: pointer;
+
+            border: 2px solid rgb(212, 115, 115);
+            background-color: rgb(218, 68, 68);
+
+            transition: .3s;
+        }
+
+        #botao1:hover {
+
+            outline: none !important;
+            border: 2px solid rgb(247, 144, 144);;
+            box-shadow: 0 0 8px rgb(255, 133, 133);
+        }
+
+        #ok1 {
+
+            margin-top: 2px;
+            color: rgb(250, 190, 190);
+
+            transition: .3s;
+        }
+        
+        #corpoMsg2 {
+
+            width: 35%;
+            height: 200px;
+            background-color: rgba(224, 75, 55, 0.664);
+            backdrop-filter: blur(4px);
+            margin-top: 12%;
+            margin-left: 31.5%;
+            position: absolute;   
+            border-radius: 10px;
+
+            outline: none !important;
+            border: 1.5px solid rgb(238, 164, 135);
+            box-shadow: 0 0 100px rgb(255, 149, 107);
+
+            text-align: center;
+            color: rgb(204, 183, 159);
+
+            transition: .3s;
+            
+            opacity: 0;
+        }
+
+        #botao2 {
+
+            width: 150px;
+            height: 40px;
+            
+            position: absolute;
+            margin-left: 15%;
+            text-align: center;
+
+            margin-top: 5%;
+            margin-left: 33%;
+            
+            border-radius: 5px;
+            cursor: pointer;
+
+            border: 2px solid rgb(212, 115, 115);
+            background-color: rgb(218, 68, 68);
+
+            transition: .3s;
+        }
+
+        #botao2:hover {
+
+            outline: none !important;
+            border: 2px solid rgb(247, 144, 144);;
+            box-shadow: 0 0 8px rgb(255, 133, 133);
+        }
+
+        #ok2 {
+
+            margin-top: 2px;
+            color: rgb(250, 190, 190);
+
+            transition: .3s;
+        }

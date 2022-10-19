@@ -1,0 +1,218 @@
+* {
+
+    font-family:  sans-serif;
+}
+
+body {
+
+    background-size: 100%;
+    background-position-y: -80px;
+    background-repeat: no-repeat;
+    background-image: url("../IMAGES/CADASTRO.jpg");
+}
+
+#formulario-corpo {
+    
+    width: 35%;
+    height: 400px;
+    background: linear-gradient(
+      180deg, 
+      rgba(94,4,112,0.5) 0%,
+      rgba(5,1,64,0.7) 52%, 
+      rgba(3, 2, 24, 1) 100%);
+      backdrop-filter: blur(4px);
+    margin-top: 10%;
+    margin-left: 31.5%;
+    position: absolute;   
+    border-radius: 2%;
+    border: 2px solid rgb(53, 2, 63);
+}
+
+#titulo-form {
+    
+    color: rgb(124, 119, 119);
+    margin-left: 13%;
+}
+
+#linha-titulo {
+
+    width: 90px;
+    height: 1px;
+    background-color: rgb(61, 56, 56);
+    margin-left: 13%;
+    margin-top: -25px;
+}
+
+
+#email-label {
+
+    position:absolute;
+    margin-top: 10%;
+    margin-left: 13%;
+    color:rgb(124, 119, 119);
+    font-size: 14pt;
+    font-weight: bold; 
+}
+
+#email { 
+
+    margin-top: 15.5%;
+    margin-left: 13%;
+    width: 350px;
+    height: 35px;
+    background-color: rgba(21, 1, 44, 0.8);
+    position:absolute;
+    border-radius: 5px;
+    border: 2px solid rgb(48, 1, 58);
+    color:rgb(124, 119, 119);
+    font-size: 12pt;
+
+    padding: 0px 15px;
+    box-sizing: border-box;
+
+    transition: .3s;
+}
+
+#senha-label {
+
+    position:absolute;
+    margin-top: 28%;
+    margin-left: 13%;
+    color:rgb(124, 119, 119);
+    font-size: 14pt;
+    font-weight: bold; 
+
+    z-index: 1;
+}
+
+#senha {
+
+    margin-top: 33.5%;
+    margin-left: 13%;
+    width: 350px;
+    height: 35px;
+    background-color: rgba(21, 1, 44, 0.8);
+    position:absolute;
+    border-radius: 5px;
+    border: 2px solid rgb(48, 1, 58);
+    color:rgb(124, 119, 119);
+    font-size: 12pt;
+
+    text-decoration: none;
+
+    padding: 0px 15px;
+    box-sizing: border-box;
+
+    z-index: 1;
+
+    transition: .3s;
+}
+
+::-webkit-input-placeholder {
+
+    font-size: 12pt;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+
+    margin: 0; 
+}
+
+input:hover {
+
+    outline: none !important;
+    box-shadow: 0 0 8px rgb(77, 1, 92);
+}
+
+input:focus {
+
+    outline: none !important;
+    border: 1px solid rgb(89, 1, 109);
+    box-shadow: 0 0 4px rgb(138, 29, 160);
+}
+
+#button-form {
+
+    display: none;
+}
+
+#button {
+
+    margin-top: 49%;
+    margin-left: 35%;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(48, 1, 58, 0.6);
+    position:absolute;
+    border-radius: 5px;
+    border: 2px solid rgba(20, 0, 43, 0.993);
+    color:rgb(124, 119, 119);
+    font-size: 15pt;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#button:hover {
+
+    background-color: rgb(48, 1, 58);
+    border: 1px solid rgb(89, 1, 109);
+    box-shadow: 0 0 10px rgb(68, 1, 83);
+    color:rgb(114, 111, 111);
+}
+
+#palavra {
+
+    margin-top: 65%;
+    margin-left: 25%;
+    color:rgb(56, 52, 52);
+}
+
+a {
+
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:link {
+
+    color: rgb(89, 1, 109)
+}
+   
+a:hover {
+
+    color: rgb(130, 6, 158)
+}
+
+#alert {
+
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    border-radius: 8px;
+    margin-top: 10%;
+    margin-left: 6%;
+    
+    opacity: 1;
+    transition: .3s;
+}
+
+#mensagemAlert {
+
+    font-size: 17pt;
+    margin-top: 23px;
+    opacity: 0;
+}
+
+#icon1 {
+
+    color: rgb(89, 1, 109);
+    margin-left: 59%;
+    margin-top: 26.36%;
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+}

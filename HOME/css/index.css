@@ -1,0 +1,257 @@
+:root {
+  --cor-primaria: rgb(120, 12, 197);
+  --cor-de-Fundo: #fffff;
+  --cor-branca: #ffff;
+}
+
+
+body,
+input,
+button,
+a {
+  font-family: "Lora", serif;
+}
+
+body {
+  background-color: var(--cor-de-Fundo);
+}
+
+.search-box{
+  
+  top: 50%;
+  left: 30%;
+  transform:translate(-50%,-50%);
+ background :#310546;
+  height: 40px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+  box-sizing: border-box;
+  
+  cursor: pointer;
+
+}
+ .search-txt{
+   border: none;
+   background: none;
+   outline: none;
+   padding:0;
+   color: rgb(255, 247, 247);
+   font-size:16px;
+   line-height: 40px;
+   width: 0;
+   transition: .10s;
+ }
+
+ .search-btn{
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+  background: #310546;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .search-box:hover >.search-txt{
+   width: 240px;
+ }
+
+.textoRoxo {
+  color: var(--cor-primaria);
+}
+
+.textoBranco {
+  color: var(--cor-branca);
+}
+
+.textoPreto {
+    margin-left: -9%;
+    margin-top: -3%;
+    
+    width: 230px;
+    height: 30px;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+#fontTextoPreto{
+    
+    font-size: 18pt;
+}
+
+.fundoRoxo {
+  background-color: var(--cor-primaria);
+}
+
+.wrapper {
+  min-height: 100vh !important;
+  width: 100%;
+  background-color: var(--cor-de-Fundo);
+}
+ .cart-txt{
+   border: none;
+   background: none;
+   outline: none;
+   padding:0;
+   color: rgb(255, 247, 247);
+   font-size:16px;
+   line-height: 40px;
+   width: 0;
+   transition: .10s;
+ }
+
+.cart-box:hover >.cart-txt{
+  width: 240px;
+}
+.produtosNovos {
+  height: 222px;
+  width: 181px;
+}
+
+.harryPotter {
+  background-image: url("../assets/harrypotter.jpg");
+}
+
+.starWars {
+  background-image: url("../assets/2.png");
+}
+
+.anime {
+  background-image: url("../assets/3.jpg");
+}
+
+.marvel {
+  background-image: url("../assets/4.png");
+}
+
+.sobreNos {
+  height: 50vh;
+  background: red;
+
+  background-image: url("../assets/parallax.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+footer {
+  height: 30vh;
+  color: var(--cor-branca);
+}
+
+.divProduto h3 {
+  color: var(--cor-branca);
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+.divProduto p {
+  font-size: 1;
+  margin-top: 2rem;
+  color: #b7b7b7;
+}
+
+.legendaBanner {
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+  border-left: 18px solid #5505ff;
+  padding: 2rem;
+  z-index: 100;
+}
+
+.legendaBanner h1 {
+  color: var(--cor-branca);
+  font-weight: normal;
+  font-size: 4rem;
+}
+.legendaBanner p {
+  color: var(--cor-branca);
+  font-size: 1.5rem;
+}
+
+.legendaBanner button {
+  color: var(--cor-branca);
+  font-size: 1.3rem;
+}
+
+.sobreTexto h2 {
+  font-size: 2.5rem;
+}
+
+.sobreTexto p {
+  color: var(--cor-branca);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sobreTexto a {
+  font-size: 1rem;
+  color: var(--cor-branca);
+}
+
+.relative {
+  position: relative;
+}
+
+.botaoProdutosNovos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.botaoProdutosNovos img {
+  width: 1rem;
+}
+
+.caixaSobre {
+  position: relative;
+
+  background-image: url("../assets/sobre2.png");
+  height: 500px;
+  width: 345px;
+  background-repeat: no-repeat;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.caixaSobre div {
+  position: absolute;
+  width: 400px;
+  top: 3rem;
+
+  color: white;
+  left: -200px;
+  padding: 5rem;
+  background: rgba(0, 0, 0, 0.795);
+}
+
+.mobile{display: none}
+@media screen and (max-width: 992px) {
+  .computador {
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .legendaBanner{
+    top: 10rem;
+  }
+}
+
+a:hover{
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: .2s;
+}

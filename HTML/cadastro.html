@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <div id="formulario-corpo" class="formulario-corpo">
+
+        <h1 id="titulo-form">Cadastrar</h1>
+        <div id="linha-titulo"></div>
+
+        <form action="cadastro.jsp" method="POST">
+
+            <label id="nome-label" for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off" onfocus="focou(1)" onblur="desfocou(1)">
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="off" onfocus="focou(2)" onblur="desfocou(2)">
+            
+            <label id="uf-label" for="uf">UF:</label>
+            <div id="select-corpo">
+                
+                <input type="text" id="uf" name="uf" placeholder="-- --" autocomplete="off" onfocus="dropFunction(0)" onblur="dropFunction(1)"><br>
+
+                <div id="select">
+
+                    <div id="options">
+
+                        <div class="item" id="item1" onmousedown="insertCategory(1)">ES</div>
+                        <div class="item" id="item2" onmousedown="insertCategory(2)">MG</div>
+                        <div class="item" id="item3" onmousedown="insertCategory(3)">RJ</div>
+                        <div class="item" id="item4" onmousedown="insertCategory(4)">SP</div>
+                        <div class="item" id="item5" onmousedown="insertCategory(5)">GO</div>
+                        <div class="item" id="item6" onmousedown="insertCategory(6)">MT</div>
+                        <div class="item" id="item7" onmousedown="insertCategory(7)">MS</div>
+                        <div class="item" id="item8" onmousedown="insertCategory(8)">DF</div>
+
+                    </div>
+
+                </div>
+
+            </div><br>
+
+            <label id="data-label" for="data">Data Nasc.</label>
+            <input type="text" id="data" onkeypress="contData()" placeholder="__/__/____" maxlength="14" autocomplete="off" onfocus="focou(4)" onblur="desfocou(4)"><br>
+
+            <label id="celular-label" for="celular">Celular - DDD</label>
+            <input type="text" id="celular" placeholder="()00000 - 0000" maxlength="15" onkeypress="mask(this, mphone);contCel()" onblur="mask(this, mphone);desfocou(5)" autocomplete="off" onfocus="focou(5)">
+
+            <label id="senha-label" for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="off" onfocus="focou(6)" onblur="desfocou(6)">
+
+            <label id="rpSenha-label" for="rpSenha">Senha</label>
+            <input type="password" id="rpSenha" placeholder="Repita sua senha" autocomplete="off" onfocus="focou(7)" onblur="desfocou(7)">
+
+            <button id="button-form"></button>
+
+        </form>
+
+        <button id="button" onclick="submit()">Cadastrar</button>
+
+        <p id="palavra">Já possui cadastro? 
+            <a href="logar.html">Logar</a>
+        </p>
+
+    </div>
+
+    <div id="alert">
+        <h1 id="mensagemAlert">As senhas devem ser iguais!</h1>
+    </div>
+
+    <span id="icon1" class="material-symbols-outlined" onclick="visibleOrNot(1)">
+        visibility
+    </span>
+    <label id="icon2" class="material-symbols-outlined" onclick="visibleOrNot(2)">
+        visibility
+    </label>
+
+    <script src="../JS/cadastro.js"></script>
+</body>
+</html>
